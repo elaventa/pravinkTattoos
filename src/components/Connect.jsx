@@ -1,4 +1,3 @@
-
 import React from "react";
 import {
     BsArrowRight,
@@ -26,12 +25,18 @@ const Connect = () => {
                 <div className="row">
                     <div className="col">
                         <h2 className="subTitle">Call Us</h2>
-                        <p className="subContent">99999 99999</p>
+                        <a href="tel:+919921209571">
+                            <p className="subContent">+91 99212 09571</p>
+                        </a>
                     </div>
 
                     <div className="col">
                         <h2 className="subTitle">Mail Us</h2>
-                        <p className="subContent">abc@@gmail.com</p>
+                        <a href="mailto:pravinkhavadiya@gmail.com">
+                            <p className="subContent">
+                                pravinkhavadiya@gmail.com
+                            </p>
+                        </a>
                     </div>
                 </div>
 
@@ -43,26 +48,43 @@ const Connect = () => {
                             Beach Near Sun Moon Guest House, <br />
                             Palolem, Canacona, Goa
                         </p>
-
-                        <button className="btn hollow">
-                            Show us on map
-                            <BsArrowRight className="hidden" />
-                        </button>
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href="https://goo.gl/maps/2qoAQDcxfps4hM4H8"
+                        >
+                            <button className="btn hollow">
+                                Show us on map
+                                <BsArrowRight className="hidden" />
+                            </button>
+                        </a>
                     </div>
                 </div>
 
                 <div className="social">
                     <h3 className="subTitle">Find us on social media</h3>
                     <div className="icons">
-                        <a href="">
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href="https://instagram.com/prav_ink_tattoos"
+                        >
                             <BsInstagram style={{ fontSize: 25 }} />
                         </a>
-                        <a href="">
+                        {/* <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href="https://instagram.com/prav_ink_tattoos"
+                        >
                             <BsTwitter style={{ fontSize: 25 }} />
                         </a>
-                        <a href="">
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href="https://instagram.com/prav_ink_tattoos"
+                        >
                             <BsFacebook style={{ fontSize: 25 }} />
-                        </a>
+                        </a> */}
                     </div>
                 </div>
             </div>

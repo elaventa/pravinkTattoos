@@ -52,7 +52,7 @@ h5 {
     min-height: 100vh;
     min-width: 100vw;
     background-color: #fff;
-    position: absolute;
+    position: fixed;
     z-index: 99;
     animation: 2s slideDown;
     animation-delay: 4s;

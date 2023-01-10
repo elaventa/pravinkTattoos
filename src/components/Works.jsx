@@ -76,8 +76,8 @@ const Works = () => {
                     <StaticImage
                         placeholder="blurred"
                         layout="constrained"
-                        src="../images/works/1.png"
-                        alt="work 1"
+                        src="../images/works/4.jpg"
+                        alt="work 4"
                     />
                 </SwiperSlide>
 
@@ -85,26 +85,19 @@ const Works = () => {
                     <StaticImage
                         placeholder="blurred"
                         layout="constrained"
-                        src="../images/works/2.png"
-                        alt="work 1"
+                        src="../images/works/5.jpg"
+                        alt="work 4"
                     />
                 </SwiperSlide>
 
-                <SwiperSlide>
-                    <StaticImage
-                        placeholder="blurred"
-                        layout="constrained"
-                        src="../images/works/3.png"
-                        alt="work 1"
-                    />
-                </SwiperSlide>
+               
             </Swiper>
 
             <div className="findUs">
-                <a href="">
+                <a target="_blank" rel="noreferrer" href="https://www.instagram.com/prav_ink_tattoos/">
                     <p>Find us on Instagram</p>
                 </a>
-                <a href="">
+                <a target="_blank" rel="noreferrer" href="https://www.instagram.com/prav_ink_tattoos/">
                     <BsArrowUpRight className="icon" />
                 </a>
             </div>

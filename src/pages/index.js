@@ -12,6 +12,7 @@ import "../styles/index.css";
 import "swiper/scss";
 import { StaticImage } from "gatsby-plugin-image";
 import Footer from "../components/Footer";
+import ogImg from "../images/ogImage.png"
 
 const IndexPage = () => {
     useEffect(() => {
@@ -27,11 +28,11 @@ const IndexPage = () => {
         <>
             <Helmet title="Pravink Tatoos">
                 <meta name="description" content="Pravink Tatoos" />
-                <meta name="image" content="https://github.com/elaventa/pravinkTattoos/blob/f8292a8a936622f3359f66c9a889ff1e39978c45/src/images/logoBlack.png?raw=true" />
+                <meta name="image" content={ogImg} />
                 <meta property="og:site_name" content="Pravink Tatoos" />
                 <meta property="og:title" content="Pravink Tatoos" />
                 <meta property="og:url" content="https://pravinktattoos.com" />
-                <meta property="og:image" itemprop="image" content="https://github.com/elaventa/pravinkTattoos/blob/f8292a8a936622f3359f66c9a889ff1e39978c45/src/images/logoBlack.png?raw=true" />
+                <meta property="og:image" itemprop="image" content={ogImg} />
                 <meta property="og:type" content="website" />
                 <meta property="og:description" content="Pravink Tatoos" />
             </Helmet>
@@ -40,7 +41,7 @@ const IndexPage = () => {
                     <StaticImage
                         placeholder="blurred"
                         layout="constrained"
-                        src="../images/logoBlack.png"
+                        src="../images/logoBlack.svg"
                         alt="logo of pravinkTattoos"
                         className="logo"
                     />

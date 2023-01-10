@@ -16,17 +16,17 @@ const Navbar = () => {
                         <StaticImage
                             placeholder="blurred"
                             layout="constrained"
-                            src="../../images/logoWhite.png"
+                            src="../../images/logoWhite.svg"
                             alt="logo of pravinkTattoos"
-                            width={100}
+                            width={130}
                         />
                     ) : (
                         <StaticImage
                             placeholder="blurred"
                             layout="constrained"
-                            src="../../images/logoBlack.png"
+                            src="../../images/logoBlack.svg"
                             alt="logo of pravinkTattoos"
-                            width={100}
+                            width={130}
                         />
                     )}
                 </div>
@@ -44,7 +44,7 @@ const Navbar = () => {
                         <BsArrowUpRight />
                     </li>
                 </Link>
-                <a href="tel:+91999999999">
+                <a href="tel:+919921209571">
                     <li className="navItem callBtn">
                         <BsTelephone />
                         Call Now
@@ -53,9 +53,11 @@ const Navbar = () => {
             </ul>
 
             <div className="mobileNav">
-                <div className="call">
-                    <BsTelephone className="icon" />
-                </div>
+                <a style={{color: "#000"}} href="tel:+919921209571">
+                    <div className="call">
+                        <BsTelephone className="icon" />
+                    </div>
+                </a>
                 <div onClick={handleClick} className={`hamburger ${clicked}`}>
                     <span></span>
                     <span></span>

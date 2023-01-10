@@ -16,23 +16,22 @@ const Footer = () => {
                 <StaticImage
                     placeholder="blurred"
                     layout="constrained"
-                    src="../images/logoWhite.png"
+                    src="../images/logoWhite.svg"
                     alt="logo of pravinkTattoos"
                 />
             </div>
-
             <div className="col">
                 <h1 className="title">Contact US</h1>
-                <a href="tel:+919999999999">
+                <a href="tel:+919921209571">
                     <p className="content">
                         <IoCallOutline className="icon" />
-                        9999999999
+                        +91 99212 09571
                     </p>
                 </a>
-                <a href="mailto:abc@gmail.com">
+                <a href="mailto:pravinkhavadiya@gmail.com">
                     <p className="content">
                         <IoMailOutline className="icon" />
-                        abc@gmail.com
+                        pravinkhavadiya@gmail.com
                     </p>
                 </a>
             </div>
@@ -45,30 +44,44 @@ const Footer = () => {
                     Palolem, Canacona, Goa
                 </p>
 
-                <button className="btn hollow">
-                    Show us on map
-                    <BsArrowRight className="hidden" />
-                </button>
+                <a target="_blank" rel="noreferrer" href="https://goo.gl/maps/2qoAQDcxfps4hM4H8">
+                    <button className="btn hollow">
+                        Show us on map
+                        <BsArrowRight className="hidden" />
+                    </button>
+                </a>
             </div>
 
             <div className="col">
                 <h3 className="title">Find us on social media</h3>
                 <div className="icons">
-                    <a target="_blank" href="">
+                    <a
+                        target="_blank" rel="noreferrer"
+                        href="https://instagram.com/prav_ink_tattoos"
+                    >
                         <BsInstagram style={{ fontSize: 25 }} />
                     </a>
-                    <a target="_blank" href="">
+                    {/* <a target="_blank"  rel="noreferrer" href="https://instagram.com/prav_ink_tattoos">
                         <BsTwitter style={{ fontSize: 25 }} />
                     </a>
-                    <a target="_blank" href="">
+                    <a target="_blank" rel="noreferrer" href="https://instagram.com/prav_ink_tattoos">
                         <BsFacebook style={{ fontSize: 25 }} />
-                    </a>
+                    </a> */}
                 </div>
             </div>
 
             <div className="credits">
                 <p>All Rights Reserved</p>
-                <p>Designed and Developed by <a style={{textDecoration: "underline"}} target="_blank" href="https://perple.in">Perple</a></p>
+                <p>
+                    Designed and Developed by{" "}
+                    <a
+                        style={{ textDecoration: "underline" }}
+                        target="_blank" rel="noreferrer"
+                        href="https://perple.in"
+                    >
+                        Perple
+                    </a>
+                </p>
             </div>
         </footer>
     );

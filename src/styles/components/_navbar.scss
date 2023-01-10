@@ -32,10 +32,11 @@
             z-index: 9;
             height: 90vh;
             padding-top: 80px;
+            display: none;
         }
         &.true{
             opacity: 1;
-            
+            display: flex;
         }
         a {
             color: #000;
