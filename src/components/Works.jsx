@@ -90,6 +90,24 @@ const Works = () => {
                     />
                 </SwiperSlide>
 
+                <SwiperSlide>
+                    <StaticImage
+                        placeholder="blurred"
+                        layout="constrained"
+                        src="../images/works/6.jpg"
+                        alt="work 4"
+                    />
+                </SwiperSlide>
+
+                <SwiperSlide>
+                    <StaticImage
+                        placeholder="blurred"
+                        layout="constrained"
+                        src="../images/works/7.jpg"
+                        alt="work 4"
+                    />
+                </SwiperSlide>
+
                
             </Swiper>
 
