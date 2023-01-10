@@ -18,7 +18,7 @@ const Navbar = () => {
                             layout="constrained"
                             src="../../images/logoWhite.svg"
                             alt="logo of pravinkTattoos"
-                            width={130}
+                            width={100}
                         />
                     ) : (
                         <StaticImage
