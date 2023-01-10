@@ -11,7 +11,7 @@ import { IoCallOutline, IoMailOutline } from "react-icons/io5";
 
 const Footer = () => {
     return (
-        <footer id="footer" className="footer">
+        <footer id="contact" className="footer">
             <div className="col">
                 <StaticImage
                     placeholder="blurred"

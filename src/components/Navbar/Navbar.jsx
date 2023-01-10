@@ -32,13 +32,13 @@ const Navbar = () => {
                 </div>
             </Link>
             <ul className={`navItems ${clicked}`}>
-                <Link to="/portfolio">
+                <Link onClick={() => setclicked(false)} to="/portfolio">
                     <li className="navItem">
                         Portfolio
                         <BsArrowUpRight />
                     </li>
                 </Link>
-                <Link to="#footer">
+                <Link onClick={() => setclicked(false)} to="#contact">
                     <li className="navItem">
                         Contact us
                         <BsArrowUpRight />
