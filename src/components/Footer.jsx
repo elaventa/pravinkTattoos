@@ -12,14 +12,14 @@ import { IoCallOutline, IoMailOutline } from "react-icons/io5";
 const Footer = () => {
     return (
         <footer className="footer">
-          <div className="col">
-            <StaticImage
-                placeholder="blurred"
-                layout="constrained"
-                src="../images/logoWhite.png"
-                alt="logo of pravinkTattoos"
-            />
-          </div>
+            <div className="col">
+                <StaticImage
+                    placeholder="blurred"
+                    layout="constrained"
+                    src="../images/logoWhite.png"
+                    alt="logo of pravinkTattoos"
+                />
+            </div>
 
             <div className="col">
                 <h1 className="title">Contact US</h1>
@@ -64,6 +64,11 @@ const Footer = () => {
                         <BsFacebook style={{ fontSize: 25 }} />
                     </a>
                 </div>
+            </div>
+
+            <div className="credits">
+                <p>All Rights Reserved</p>
+                <p>Designed and Developed by <a style={{textDecoration: "underline"}} target="_blank" href="https://perple.in">Perple</a></p>
             </div>
         </footer>
     );

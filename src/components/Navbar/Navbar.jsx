@@ -1,3 +1,4 @@
+import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import React, { useState } from "react";
 import { BsArrowUpRight, BsTelephone } from "react-icons/bs";
@@ -9,42 +10,42 @@ const Navbar = () => {
     };
     return (
         <nav className={`navbar ${clicked}`}>
-            <div className="logo">
-                {clicked ? (
-                    <StaticImage
-                        placeholder="blurred"
-                        layout="constrained"
-                        src="../../images/logoWhite.png"
-                        alt="logo of pravinkTattoos"
-                        width={100}
-                    />
-                ) : (
-                    <StaticImage
-                        placeholder="blurred"
-                        layout="constrained"
-                        src="../../images/logoBlack.png"
-                        alt="logo of pravinkTattoos"
-                        width={100}
-                    />
-                )}
-            </div>
-
+            <Link to="/">
+                <div className="logo">
+                    {clicked ? (
+                        <StaticImage
+                            placeholder="blurred"
+                            layout="constrained"
+                            src="../../images/logoWhite.png"
+                            alt="logo of pravinkTattoos"
+                            width={100}
+                        />
+                    ) : (
+                        <StaticImage
+                            placeholder="blurred"
+                            layout="constrained"
+                            src="../../images/logoBlack.png"
+                            alt="logo of pravinkTattoos"
+                            width={100}
+                        />
+                    )}
+                </div>
+            </Link>
             <ul className={`navItems ${clicked}`}>
-                <a href="#">
+                <Link to="/portfolio">
                     <li className="navItem">
                         Portfolio
                         <BsArrowUpRight />
                     </li>
-                </a>
-                <a href="#">
+                </Link>
+                <Link to="#connect">
                     <li className="navItem">
                         Contact us
                         <BsArrowUpRight />
                     </li>
-                </a>
-                <a href="#">
+                </Link>
+                <a href="tel:+91999999999">
                     <li className="navItem callBtn">
-                        {" "}
                         <BsTelephone />
                         Call Now
                     </li>

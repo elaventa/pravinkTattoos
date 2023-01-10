@@ -24,7 +24,7 @@ const IndexPage = () => {
     }, []);
 
     return (
-        <section>
+        <>
             <Helmet title="Pravink Tatoos">
                 <meta name="description" content="Pravink Tatoos" />
                 <meta name="image" content="https://github.com/elaventa/pravinkTattoos/blob/f8292a8a936622f3359f66c9a889ff1e39978c45/src/images/logoBlack.png?raw=true" />
@@ -54,7 +54,7 @@ const IndexPage = () => {
             <About />
             <Reviews />
             <Footer />
-        </section>
+        </>
     );
 };
 

@@ -10,7 +10,7 @@ import { StaticImage } from "gatsby-plugin-image";
 
 const Connect = () => {
     return (
-        <section className="connect">
+        <section id="connect" className="connect">
             <div className="image">
                 <StaticImage
                     placeholder="blurred"

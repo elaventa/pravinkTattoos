@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@200;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;500;600;700;800&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #f9f3ec;
   padding: 0;
@@ -1058,6 +1062,7 @@ h5 {
 }
 
 .footer {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1067,6 +1072,7 @@ h5 {
           flex-direction: row;
   background-color: #121214;
   padding: 100px 150px;
+  padding-bottom: 150px;
   color: #fff;
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -1081,6 +1087,7 @@ h5 {
 @media (max-width: 1350px) {
   .footer {
     padding: 100px;
+    padding-bottom: 150px;
     gap: 30px;
   }
 }
@@ -1088,6 +1095,7 @@ h5 {
 @media (max-width: 1200px) {
   .footer {
     padding: 100px 50px;
+    padding-bottom: 150px;
     gap: 20px;
   }
 }
@@ -1166,5 +1174,176 @@ h5 {
       -ms-flex-align: center;
           align-items: center;
   gap: 50px;
+}
+
+.footer .credits {
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  left: 50%;
+  width: 100%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.footer .credits p {
+  margin-bottom: 10px;
+}
+
+.aboutTeam {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+  width: 80vw;
+  margin: 60px auto;
+}
+
+@media (max-width: 1300px) {
+  .aboutTeam {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .aboutTeam {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.aboutTeam .contentWrapper .title {
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 4rem;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 800px) {
+  .aboutTeam .contentWrapper .title {
+    font-size: 35px;
+    line-height: 3rem;
+  }
+}
+
+.aboutTeam .contentWrapper .content {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.aboutTeam .image .img {
+  width: 30vw;
+}
+
+@media (max-width: 1000px) {
+  .aboutTeam .image .img {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 800px) {
+  .aboutTeam .image .img {
+    width: 100vw;
+  }
+}
+
+.teamSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+  margin-top: 80px;
+  margin-bottom: 150px;
+}
+
+@media (max-width: 1000px) {
+  .teamSection {
+    margin-top: 30px;
+  }
+}
+
+.teamSection .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.teamSection .title {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  margin-top: 100px;
+}
+
+.teamSection .teamCard {
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.teamSection .teamCard .content {
+  padding: 20px;
+  border: 1px solid #000;
+}
+
+.teamSection .teamCard .content .name {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.teamSection .teamCard .content p {
+  color: #121214;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.teamSection .teamCard .content p span {
+  font-weight: 600;
+}
+
+.teamSection .teamCard.highlight {
+  background-color: #000;
+}
+
+.teamSection .teamCard.highlight .content {
+  color: #fff;
+}
+
+.teamSection .teamCard.highlight .content p {
+  color: #fff;
 }
 /*# sourceMappingURL=index.css.map */
