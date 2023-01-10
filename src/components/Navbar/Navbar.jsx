@@ -38,7 +38,7 @@ const Navbar = () => {
                         <BsArrowUpRight />
                     </li>
                 </Link>
-                <Link to="#connect">
+                <Link to="#footer">
                     <li className="navItem">
                         Contact us
                         <BsArrowUpRight />
