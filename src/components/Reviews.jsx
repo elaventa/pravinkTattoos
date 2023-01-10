@@ -4,7 +4,6 @@ import { useSwiper } from "swiper/react";
 import {
     BsArrowLeft,
     BsArrowRight,
-    BsArrowUpRight,
 } from "react-icons/bs";
 import { Navigation, Pagination } from "swiper";
 import reviews from "../data/reviews.json";
@@ -50,8 +49,8 @@ const Reviews = () => {
                     },
                 }}
             >
-                {reviews.map((review) => (
-                    <SwiperSlide>
+                {reviews.map((review, index) => (
+                    <SwiperSlide key={index}>
                         <div className="reviewWrapper">
                             <p className="content">{review.review}</p>
                             <p className="person">-{review.person}</p>

@@ -1,9 +1,10 @@
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
+import { BsArrowRight } from "react-icons/bs";
 
 const Showcase = () => {
     return (
-        <section class="showcase">
+        <section className="showcase">
             <StaticImage
                 layout="fixed"
                 src="../images/header.png"
@@ -12,19 +13,20 @@ const Showcase = () => {
                 className="bg"
             />
 
-            <div class="content">
-                <h1 class="title">Transform Your Body into a Work of Art</h1>
+            <div className="content">
+                <h1 className="title">Transform Your Body into a Work of Art</h1>
                 <p>
                     Clean and professional tattoos in a safe and sterile studio.
                     Trust us to take care of you and your ink.
                 </p>
-                <div class="actions">
-                    <button class="btn solid">
-                        Contact Us{" "}
-                        <i class="fa-solid fa-arrow-right hidden"></i>
+                <div className="actions">
+                    <button className="btn solid">
+                        Contact Us 
+                        <BsArrowRight className="hidden" />
                     </button>
-                    <button class="btn hollow">
-                        Locate Us <i class="fa-solid fa-arrow-right hidden"></i>
+                    <button className="btn hollow">
+                        Locate Us 
+                        <BsArrowRight className="hidden" />
                     </button>
                 </div>
             </div>

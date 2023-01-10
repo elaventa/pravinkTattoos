@@ -16,7 +16,7 @@ const Navbar = () => {
                         layout="constrained"
                         src="../../images/logoWhite.png"
                         alt="logo of pravinkTattoos"
-                        width={130}
+                        width={100}
                     />
                 ) : (
                     <StaticImage
@@ -24,7 +24,7 @@ const Navbar = () => {
                         layout="constrained"
                         src="../../images/logoBlack.png"
                         alt="logo of pravinkTattoos"
-                        width={130}
+                        width={100}
                     />
                 )}
             </div>

@@ -11,6 +11,7 @@ import Works from "../components/Works";
 import "../styles/index.css";
 import "swiper/scss";
 import logo from "../images/logoBlack.png"
+import { StaticImage } from "gatsby-plugin-image";
 
 const IndexPage = () => {
     useEffect(() => {
@@ -36,14 +37,13 @@ const IndexPage = () => {
             </Helmet>
             <div id="preloaderWrapper">
                 <div id="preloader">
-                    {/* <StaticImage
+                    <StaticImage
                         placeholder="blurred"
                         layout="constrained"
                         src="../images/logoBlack.png"
                         alt="logo of pravinkTattoos"
-                        class="logo"
-                    /> */}
-                    <img src={logo} alt="logo" className="logo" />
+                        className="logo"
+                    />
                 </div>
             </div>
             <Navbar />

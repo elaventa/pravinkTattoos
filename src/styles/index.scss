@@ -78,15 +78,13 @@ h5 {
 @keyframes appearAndDisappear {
     0%{
         opacity: 0.5;
+        scale: 0.5;
     }
     35%{
         opacity: 1;
     }
-    99%{
-        opacity: 1;
-        scale: 1.2;
-    }
     100% {
+        scale: 1;
         opacity: 1;
     }
 }
