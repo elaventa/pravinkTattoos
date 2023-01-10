@@ -5,14 +5,13 @@ import AboutTeam from "../components/AboutTeam";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar/Navbar";
 import Team from "../components/Team";
-import ogImg from "../images/ogImage.png"
 
 const PortfolioPage = () => {
     return (
         <>
             <Helmet title="Pravink Tatoos Portfolio">
                 <meta name="description" content="Pravink Tatoos" />
-                <meta name="image" content={ogImg} />
+                <meta name="image" content="https://github.com/elaventa/pravinkTattoos/blob/d8f2b1f2217729d05d8732dba3ccf9708cfcc404/src/images/ogImage.png?raw=true" />
                 <meta property="og:site_name" content="Pravink Tatoos" />
                 <meta property="og:title" content="Pravink Tatoos" />
                 <meta property="og:url" content="https://pravinktattoos.com" />

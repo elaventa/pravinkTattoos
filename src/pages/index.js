@@ -12,7 +12,6 @@ import "../styles/index.css";
 import "swiper/scss";
 import { StaticImage } from "gatsby-plugin-image";
 import Footer from "../components/Footer";
-import ogImg from "../images/ogImage.png"
 
 const IndexPage = () => {
     useEffect(() => {
@@ -28,7 +27,7 @@ const IndexPage = () => {
         <>
             <Helmet title="Pravink Tatoos">
                 <meta name="description" content="Pravink Tatoos" />
-                <meta name="image" content={ogImg} />
+                <meta name="image" content="https://github.com/elaventa/pravinkTattoos/blob/d8f2b1f2217729d05d8732dba3ccf9708cfcc404/src/images/ogImage.png?raw=true" />
                 <meta property="og:site_name" content="Pravink Tatoos" />
                 <meta property="og:title" content="Pravink Tatoos" />
                 <meta property="og:url" content="https://pravinktattoos.com" />
