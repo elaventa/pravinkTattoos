@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@200;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@200;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;500;600;700;800&display=swap");
 body {
   background-color: #f9f3ec;
@@ -11,6 +11,11 @@ body {
 * {
   padding: 0;
   margin: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
 }
 
 h1,
@@ -1050,5 +1055,116 @@ h5 {
   right: 0;
   font-size: 20px;
   font-weight: bold;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #121214;
+  padding: 100px 150px;
+  color: #fff;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 1350px) {
+  .footer {
+    padding: 100px;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    padding: 100px 50px;
+    gap: 20px;
+  }
+}
+
+.footer .col {
+  min-width: 25%;
+  margin: 20px 0;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+}
+
+.footer .col .title {
+  font-family: 'Barlow';
+  font-size: 23px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.footer .col .content {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.footer .col .content .icon {
+  font-size: 25px;
+}
+
+.footer .col .hidden {
+  -webkit-transition: opacity 0.5s ease-out;
+  transition: opacity 0.5s ease-out;
+}
+
+.footer .col .hollow {
+  background-color: transparent;
+  border: 1px solid #fff;
+  margin-top: 20px;
+}
+
+.footer .col .hollow .hidden {
+  opacity: 0;
+  position: absolute;
+}
+
+.footer .col .hollow:hover {
+  background-color: #888781;
+  border: 1px solid #888781;
+}
+
+.footer .col .hollow:hover .hidden {
+  position: relative;
+  opacity: 1;
+}
+
+.footer .col .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
 }
 /*# sourceMappingURL=index.css.map */

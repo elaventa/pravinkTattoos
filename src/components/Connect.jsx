@@ -1,13 +1,24 @@
-import connect from "../images/connect.png";
 
 import React from "react";
-import { BsArrowRight, BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
+import {
+    BsArrowRight,
+    BsFacebook,
+    BsInstagram,
+    BsTwitter,
+} from "react-icons/bs";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Connect = () => {
     return (
         <section className="connect">
             <div className="image">
-                <img src={connect} alt="" />
+                <StaticImage
+                    placeholder="blurred"
+                    layout="constrained"
+                    src="../images/connect.png"
+                    alt="logo of pravinkTattoos"
+                    className="logo"
+                />
             </div>
 
             <div className="content">
@@ -44,13 +55,13 @@ const Connect = () => {
                     <h3 className="subTitle">Find us on social media</h3>
                     <div className="icons">
                         <a href="">
-                            <BsInstagram style={{fontSize: 25}} />
+                            <BsInstagram style={{ fontSize: 25 }} />
                         </a>
                         <a href="">
-                            <BsTwitter style={{fontSize: 25}}/>
+                            <BsTwitter style={{ fontSize: 25 }} />
                         </a>
                         <a href="">
-                            <BsFacebook style={{fontSize: 25}}/>
+                            <BsFacebook style={{ fontSize: 25 }} />
                         </a>
                     </div>
                 </div>

@@ -10,8 +10,8 @@ import Showcase from "../components/Showcase";
 import Works from "../components/Works";
 import "../styles/index.css";
 import "swiper/scss";
-import logo from "../images/logoBlack.png"
 import { StaticImage } from "gatsby-plugin-image";
+import Footer from "../components/Footer";
 
 const IndexPage = () => {
     useEffect(() => {
@@ -53,6 +53,7 @@ const IndexPage = () => {
             <Connect />
             <About />
             <Reviews />
+            <Footer />
         </section>
     );
 };
