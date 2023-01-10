@@ -20,7 +20,7 @@ const IndexPage = () => {
         if (spinner) {
             setTimeout(() => {
                 spinner.style.display = "none";
-            }, 6000);
+            }, 5000);
         }
     }, []);
 
