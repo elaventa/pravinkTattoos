@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@200;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;500;600;700;800&display=swap");
+
+$bg-clr: #f9f3ec;
+body {
+    background-color: #f9f3ec;
+    padding: 0;
+    margin: 0;
+    font-family: "Barlow";
+    overflow-x: hidden;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "kanit";
+}
+
+.btn {
+    background-color: #121214;
+    padding: 15px 35px;
+    color: #fff;
+    border-radius: 37px;
+    font-size: 18px;
+    border: none;
+    font-family: 'kanit';
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: all .5s ease;
+}
+
+#preloaderWrapper{
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: #fff;
+    position: absolute;
+    z-index: 99;
+    animation: 2s slideDown;
+    animation-delay: 4s;
+}
+#preloader{
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: $bg-clr;
+    animation: 1s slideup;
+    position: absolute;
+    z-index: 99;
+    
+    .logo{
+        animation: 3s appearAndDisappear;
+        animation-delay: 1s;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+    }
+}
+
+@keyframes slideDown {
+    0%{
+        top: 0;
+    }
+    100% {
+        top: 100vh;
+    }
+}
+
+@keyframes appearAndDisappear {
+    0%{
+        opacity: 0.5;
+    }
+    35%{
+        opacity: 1;
+    }
+    99%{
+        opacity: 1;
+        scale: 1.2;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideup {
+    0%{
+        top: 100vh;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@import "./components/navbar";
+@import "./components/showcase";
+@import "./components//howTheyDo";
+@import "./components//connect";
+@import "./components/about";
+@import "./components/works";
+@import "./components/review";
+@import "./components/footer";

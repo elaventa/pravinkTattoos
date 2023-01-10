@@ -1,0 +1,94 @@
+.showcase {
+    height: 90vh;
+    position: relative;
+
+    .bg {
+        height: 90vh;
+        width: 100%;
+        object-fit: cover;
+        
+        @media(max-width: 1300px){
+            object-position: 90%;
+        }
+        @media(max-width: 600px){
+            object-position: 80%;
+        }
+    }
+
+    .content {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        .title {
+            font-size: 65px;
+            font-weight: 800;
+            margin-bottom: 10px;
+            @media(max-width: 1300px){
+                font-size: 50px;
+            }
+        }
+
+        p {
+            font-size: 22px;
+        }
+
+        .actions {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 50px;
+            margin-top: 50px;
+
+            @media(max-width: 600px){
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .hidden{
+                transition: opacity 0.5s ease-out;
+            }
+            .solid {
+                background-color: #fff;
+                color: #0c0c0c;
+                
+                .hidden {
+                    opacity: 0;
+                    position: absolute;
+                }
+                &:hover {
+                    background-color: $bg-clr;
+                    .hidden {
+                        position: relative;
+                        opacity: 1;
+                    }
+                }
+            }
+
+            .hollow {
+                background-color: transparent;
+                color: #fff;
+                border: 1px solid #fff;
+                .hidden {
+                    opacity: 0;
+                    position: absolute;
+                }
+                &:hover {
+                    background-color: #888781;
+                    border: 1px solid #888781;
+                    .hidden {
+                        position: relative;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
