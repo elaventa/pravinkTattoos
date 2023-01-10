@@ -5,6 +5,7 @@ import AboutTeam from "../components/AboutTeam";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar/Navbar";
 import Team from "../components/Team";
+import "../styles/index.scss";
 
 const PortfolioPage = () => {
     return (

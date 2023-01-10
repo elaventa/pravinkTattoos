@@ -8,7 +8,7 @@ import Navbar from "../components/Navbar/Navbar";
 import Reviews from "../components/Reviews";
 import Showcase from "../components/Showcase";
 import Works from "../components/Works";
-import "../styles/index.css";
+import "../styles/index.scss";
 import "swiper/scss";
 import { StaticImage } from "gatsby-plugin-image";
 import Footer from "../components/Footer";
