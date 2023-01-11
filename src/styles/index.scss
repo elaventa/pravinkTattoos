@@ -3,7 +3,7 @@
 
 $bg-clr: #f9f3ec;
 
-html{
+html {
     scroll-behavior: smooth;
 }
 body {
@@ -12,7 +12,6 @@ body {
     margin: 0;
     font-family: "Barlow";
     overflow-x: hidden;
-    
 }
 
 * {
@@ -20,7 +19,21 @@ body {
     margin: 0;
 }
 
-a{
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background:#000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $bg-clr;
+    border-radius: 5px;
+    border-left: 1px solid #000;
+}
+
+a {
     color: #fff;
     text-decoration: none;
 }
@@ -40,15 +53,15 @@ h5 {
     border-radius: 37px;
     font-size: 18px;
     border: none;
-    font-family: 'kanit';
+    font-family: "kanit";
     cursor: pointer;
     display: flex;
     align-items: center;
     gap: 20px;
-    transition: all .5s ease;
+    transition: all 0.5s ease;
 }
 
-#preloaderWrapper{
+#preloaderWrapper {
     min-height: 100vh;
     min-width: 100vw;
     background-color: #fff;
@@ -57,15 +70,15 @@ h5 {
     animation: 2s slideDown;
     animation-delay: 4s;
 }
-#preloader{
+#preloader {
     min-height: 100vh;
     min-width: 100vw;
     background-color: $bg-clr;
     animation: 1s slideup;
     position: absolute;
     z-index: 99;
-    
-    .logo{
+
+    .logo {
         animation: 3s appearAndDisappear;
         animation-delay: 1s;
         position: absolute;
@@ -77,7 +90,7 @@ h5 {
 }
 
 @keyframes slideDown {
-    0%{
+    0% {
         top: 0;
     }
     100% {
@@ -86,11 +99,11 @@ h5 {
 }
 
 @keyframes appearAndDisappear {
-    0%{
+    0% {
         opacity: 0.7;
         scale: 0.7;
     }
-    35%{
+    35% {
         opacity: 1;
     }
     100% {
@@ -99,9 +112,8 @@ h5 {
     }
 }
 
-
 @keyframes slideup {
-    0%{
+    0% {
         top: 100vh;
     }
     100% {

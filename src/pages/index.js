@@ -12,42 +12,48 @@ import "../styles/index.scss";
 import "swiper/scss";
 import { StaticImage } from "gatsby-plugin-image";
 import Footer from "../components/Footer";
-import ogImg from "../images/ogImage.png"
-
+import ogImg from "../images/ogImage.png";
+import { useState } from "react";
 
 const IndexPage = () => {
+    const [loader, setloader] = useState(true);
     useEffect(() => {
-        const spinner = document.getElementById("preloaderWrapper");
-        if (spinner) {
-            setTimeout(() => {
-                spinner.style.display = "none";
-            }, 5000);
-        }
+        setTimeout(() => {
+            setloader(false)
+        }, 5000);
     }, []);
 
     return (
         <>
             <Helmet title="Pravink Tatoos">
-                <meta name="description" content="We aim at customer satisfaction by delivering top class quality service & quality output. Make your body-art experience a positive one and a happy memory one would cherish always" />
+                <meta
+                    name="description"
+                    content="We aim at customer satisfaction by delivering top class quality service & quality output. Make your body-art experience a positive one and a happy memory one would cherish always"
+                />
                 <meta name="image" content={ogImg} />
                 <meta property="og:site_name" content="Pravink Tatoos" />
                 <meta property="og:title" content="Pravink Tatoos" />
                 <meta property="og:url" content="https://pravinktattoos.com" />
                 <meta property="og:image" itemprop="image" content={ogImg} />
                 <meta property="og:type" content="website" />
-                <meta property="og:description" content="We aim at customer satisfaction by delivering top class quality service & quality output. Make your body-art experience a positive one and a happy memory one would cherish always" />
+                <meta
+                    property="og:description"
+                    content="We aim at customer satisfaction by delivering top class quality service & quality output. Make your body-art experience a positive one and a happy memory one would cherish always"
+                />
             </Helmet>
-            <div id="preloaderWrapper">
-                <div id="preloader">
-                    <StaticImage
-                        placeholder="blurred"
-                        layout="constrained"
-                        src="../images/logoBlack.svg"
-                        alt="logo of pravinkTattoos"
-                        className="logo"
-                    />
+            {loader && (
+                <div id="preloaderWrapper">
+                    <div id="preloader">
+                        <StaticImage
+                            placeholder="blurred"
+                            layout="constrained"
+                            src="../images/logoBlack.svg"
+                            alt="logo of pravinkTattoos"
+                            className="logo"
+                        />
+                    </div>
                 </div>
-            </div>
+            )}
             <Navbar />
             <Showcase />
             <HowTheyDo />
