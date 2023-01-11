@@ -108,6 +108,66 @@ const Works = () => {
                     />
                 </SwiperSlide>
 
+                <SwiperSlide>
+                    <StaticImage
+                        placeholder="blurred"
+                        layout="constrained"
+                        src="../images/works/8.jpg"
+                        alt="work 4"
+                    />
+                </SwiperSlide>
+
+                <SwiperSlide>
+                    <StaticImage
+                        placeholder="blurred"
+                        layout="constrained"
+                        src="../images/works/9.jpg"
+                        alt="work 4"
+                    />
+                </SwiperSlide>
+
+
+                <SwiperSlide>
+                    <StaticImage
+                        placeholder="blurred"
+                        layout="constrained"
+                        src="../images/works/10.jpg"
+                        alt="work 4"
+                    />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <StaticImage
+                        placeholder="blurred"
+                        layout="constrained"
+                        src="../images/works/11.jpg"
+                        alt="work 4"
+                    />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <StaticImage
+                        placeholder="blurred"
+                        layout="constrained"
+                        src="../images/works/12.jpg"
+                        alt="work 4"
+                    />
+                </SwiperSlide>
+
+                <SwiperSlide>
+                    <StaticImage
+                        placeholder="blurred"
+                        layout="constrained"
+                        src="../images/works/13.jpg"
+                        alt="work 4"
+                    />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <StaticImage
+                        placeholder="blurred"
+                        layout="constrained"
+                        src="../images/works/14.jpg"
+                        alt="work 4"
+                    />
+                </SwiperSlide>
                
             </Swiper>
 
