@@ -70,7 +70,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="credits">
+            {/* <div className="credits">
                 <p>All Rights Reserved</p>
                 <p>
                     Designed and Developed by{" "}
@@ -82,7 +82,7 @@ const Footer = () => {
                         Perple
                     </a>
                 </p>
-            </div>
+            </div> */}
         </footer>
     );
 };
