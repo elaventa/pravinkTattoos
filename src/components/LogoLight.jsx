@@ -9,7 +9,7 @@ const LogoLight = () => {
                 layout="constrained"
                 src="../images/logoWhite.svg"
                 alt="logo of pravinkTattoos"
-                width={60}
+                width={55}
             />
             
             <div className="logoTitleWrapper light">

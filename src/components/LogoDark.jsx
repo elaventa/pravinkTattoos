@@ -9,7 +9,7 @@ const LogoDark = () => {
                 layout="constrained"
                 src="../images/logoBlack.svg"
                 alt="logo of pravinkTattoos"
-                width={60}
+                width={55}
             />
             <div className="logoTitleWrapper dark">
                 <h1 className="logoTitle">PRAV INK</h1>
