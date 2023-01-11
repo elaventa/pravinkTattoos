@@ -96,6 +96,9 @@ h5 {
     gap: 10px;
     align-items: center;
     z-index: 1;
+    @media(max-width: 400px){
+        gap: 5px;
+    }
     .logoTitleWrapper{
         display: flex;
         flex-direction: column;
@@ -104,6 +107,14 @@ h5 {
             letter-spacing: 0.2em;
             font-size: 23.2826px;
             line-height: 120%;
+
+            @media(max-width: 800px){
+                font-size: 20.2826px;
+            }
+
+            @media(max-width: 400px){
+                font-size: 18.2826px;
+            }
         }
 
         &.dark{
