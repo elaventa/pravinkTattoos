@@ -1,11 +1,6 @@
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
-import {
-    BsArrowRight,
-    BsFacebook,
-    BsInstagram,
-    BsTwitter,
-} from "react-icons/bs";
+import { BsArrowRight, BsInstagram, BsWhatsapp } from "react-icons/bs";
 
 import { IoCallOutline, IoMailOutline } from "react-icons/io5";
 
@@ -44,7 +39,11 @@ const Footer = () => {
                     Palolem, Canacona, Goa
                 </p>
 
-                <a target="_blank" rel="noreferrer" href="https://goo.gl/maps/2qoAQDcxfps4hM4H8">
+                <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://goo.gl/maps/2qoAQDcxfps4hM4H8"
+                >
                     <button className="btn hollow">
                         Show us on map
                         <BsArrowRight className="hidden" />
@@ -56,15 +55,20 @@ const Footer = () => {
                 <h3 className="title">Find us on social media</h3>
                 <div className="icons">
                     <a
-                        target="_blank" rel="noreferrer"
+                        target="_blank"
+                        rel="noreferrer"
                         href="https://instagram.com/prav_ink_tattoos"
                     >
                         <BsInstagram style={{ fontSize: 25 }} />
                     </a>
-                    {/* <a target="_blank"  rel="noreferrer" href="https://instagram.com/prav_ink_tattoos">
-                        <BsTwitter style={{ fontSize: 25 }} />
+                    <a
+                        target="_blank"
+                        rel="noreferrer"
+                        href="https://wa.me/+919921209571"
+                    >
+                        <BsWhatsapp style={{ fontSize: 25 }} />
                     </a>
-                    <a target="_blank" rel="noreferrer" href="https://instagram.com/prav_ink_tattoos">
+                    {/* <a target="_blank" rel="noreferrer" href="https://instagram.com/prav_ink_tattoos">
                         <BsFacebook style={{ fontSize: 25 }} />
                     </a> */}
                 </div>

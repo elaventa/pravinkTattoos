@@ -4,6 +4,7 @@ import {
     BsFacebook,
     BsInstagram,
     BsTwitter,
+    BsWhatsapp,
 } from "react-icons/bs";
 import { StaticImage } from "gatsby-plugin-image";
 
@@ -71,13 +72,14 @@ const Connect = () => {
                         >
                             <BsInstagram style={{ fontSize: 25 }} />
                         </a>
-                        {/* <a
+                        <a
                             target="_blank"
                             rel="noreferrer"
-                            href="https://instagram.com/prav_ink_tattoos"
+                            href="https://wa.me/+919921209571"
                         >
-                            <BsTwitter style={{ fontSize: 25 }} />
+                            <BsWhatsapp style={{ fontSize: 25 }} />
                         </a>
+                        {/* 
                         <a
                             target="_blank"
                             rel="noreferrer"
