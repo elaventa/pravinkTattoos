@@ -70,9 +70,9 @@ const Footer = () => {
                 </div>
             </div>
 
-            {/* <div className="credits">
+            <div className="credits">
                 <p>All Rights Reserved</p>
-                <p>
+                {/* <p>
                     Designed and Developed by{" "}
                     <a
                         style={{ textDecoration: "underline" }}
@@ -81,8 +81,8 @@ const Footer = () => {
                     >
                         Perple
                     </a>
-                </p>
-            </div> */}
+                </p> */}
+            </div>
         </footer>
     );
 };
