@@ -14,12 +14,13 @@ import { StaticImage } from "gatsby-plugin-image";
 import Footer from "../components/Footer";
 import ogImg from "../images/ogImage.png";
 import { useState } from "react";
+import LogoDark from "../components/LogoDark";
 
 const IndexPage = () => {
     const [loader, setloader] = useState(true);
     useEffect(() => {
         setTimeout(() => {
-            setloader(false)
+            setloader(false);
         }, 5000);
     }, []);
 
@@ -44,13 +45,9 @@ const IndexPage = () => {
             {loader && (
                 <div id="preloaderWrapper">
                     <div id="preloader">
-                        <StaticImage
-                            placeholder="blurred"
-                            layout="constrained"
-                            src="../images/logoBlack.svg"
-                            alt="logo of pravinkTattoos"
-                            className="logo"
-                        />
+                        <div className="logo">
+                            <LogoDark />
+                        </div>
                     </div>
                 </div>
             )}

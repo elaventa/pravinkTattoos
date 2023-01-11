@@ -2,6 +2,8 @@ import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import React, { useState } from "react";
 import { BsArrowUpRight, BsTelephone } from "react-icons/bs";
+import LogoDark from "../LogoDark";
+import LogoLight from "../LogoLight";
 
 const Navbar = () => {
     const [clicked, setclicked] = useState(false);
@@ -11,23 +13,11 @@ const Navbar = () => {
     return (
         <nav className={`navbar ${clicked}`}>
             <Link to="/">
-                <div className="logo">
+                <div>
                     {clicked ? (
-                        <StaticImage
-                            placeholder="blurred"
-                            layout="constrained"
-                            src="../../images/logoWhite.svg"
-                            alt="logo of pravinkTattoos"
-                            width={100}
-                        />
+                        <LogoLight />
                     ) : (
-                        <StaticImage
-                            placeholder="blurred"
-                            layout="constrained"
-                            src="../../images/logoBlack.svg"
-                            alt="logo of pravinkTattoos"
-                            width={130}
-                        />
+                       <LogoDark />
                     )}
                 </div>
             </Link>

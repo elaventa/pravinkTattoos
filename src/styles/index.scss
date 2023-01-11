@@ -89,6 +89,32 @@ h5 {
     }
 }
 
+
+.logoContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    z-index: 1;
+    .logoTitleWrapper{
+        display: flex;
+        flex-direction: column;
+        .logoTitle{
+            line-height: 1.5rem;
+            font-size: 25px;
+        }
+        &.dark{
+            color: #000;
+        }
+
+        &.light{
+            color: #fff;
+        }
+    }
+}
+
+
+
 @keyframes slideDown {
     0% {
         top: 0;

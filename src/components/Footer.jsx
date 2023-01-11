@@ -3,17 +3,13 @@ import React from "react";
 import { BsArrowRight, BsInstagram, BsWhatsapp } from "react-icons/bs";
 
 import { IoCallOutline, IoMailOutline } from "react-icons/io5";
+import LogoLight from "./LogoLight";
 
 const Footer = () => {
     return (
         <footer id="contact" className="footer">
             <div className="col">
-                <StaticImage
-                    placeholder="blurred"
-                    layout="constrained"
-                    src="../images/logoWhite.svg"
-                    alt="logo of pravinkTattoos"
-                />
+                <LogoLight />
             </div>
             <div className="col">
                 <h1 className="title">Contact US</h1>
