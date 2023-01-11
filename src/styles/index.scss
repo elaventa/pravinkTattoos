@@ -101,8 +101,11 @@ h5 {
         flex-direction: column;
         .logoTitle{
             line-height: 1.5rem;
-            font-size: 25px;
+            letter-spacing: 0.2em;
+            font-size: 23.2826px;
+            line-height: 120%;
         }
+
         &.dark{
             color: #000;
         }

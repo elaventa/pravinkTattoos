@@ -9,12 +9,12 @@ const LogoLight = () => {
                 layout="constrained"
                 src="../images/logoWhite.svg"
                 alt="logo of pravinkTattoos"
-                width={50}
+                width={60}
             />
             
             <div className="logoTitleWrapper light">
-                <h1 className="logoTitle">Prav Ink</h1>
-                <h1 className="logoTitle">Tattoos</h1>
+            <h1 className="logoTitle">PRAV INK</h1>
+                <h1 className="logoTitle">TATTOOS</h1>
             </div>
         </div>
     );
