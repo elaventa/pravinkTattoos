@@ -2,7 +2,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import "./ReachUs.scss";
 import { useForm, ValidationError } from "@formspree/react";
-import { BsInstagram, BsWhatsapp } from "react-icons/bs";
+import { BsArrowRight, BsInstagram, BsWhatsapp } from "react-icons/bs";
 
 const ReachUs = () => {
     const [state, handleSubmit] = useForm("mnqyplkq");
@@ -76,11 +76,11 @@ const ReachUs = () => {
                         field="message"
                         errors={state.errors}
                     />
-                    <input
-                        type="submit"
-                        value="Submit"
-                        disabled={state.submitting}
-                    />
+                    <button disabled={state.submitting} className="btn hollow">
+                        Submit
+                        <BsArrowRight className="hidden" />
+                    </button>
+                    
                 </form>
             </div>
         </section>

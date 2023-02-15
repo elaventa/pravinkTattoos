@@ -53,7 +53,29 @@
             flex-direction: column;
             gap: 20px;
             margin: 50px 0;
-            
+            .hidden{
+                transition: opacity 0.5s ease-out;
+            }
+            .hollow{
+                width: fit-content;
+                border: 1px solid #fff;
+                margin-top: 20px;
+                background-color: #000;
+                color: #fff;
+                width: fit-content;
+                .hidden {
+                    opacity: 0;
+                    position: absolute;
+                }
+                &:hover {
+                    background-color: #888781;
+                    border: 1px solid #888781;
+                    .hidden {
+                        position: relative;
+                        opacity: 1;
+                    }
+                }
+            }
             input, textarea{
                 background: transparent;
                 border: 1px solid #00000030;
@@ -61,11 +83,7 @@
                 padding: 10px 30px;
 
             }
-            input[type="submit"] {
-                background-color: #000;
-                color: #fff;
-                width: fit-content;
-            }
+           
         }
     }
 }
