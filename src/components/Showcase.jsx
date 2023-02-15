@@ -23,7 +23,7 @@ const Showcase = () => {
                     Trust us to take care of you and your ink.
                 </p>
                 <div className="actions">
-                    <Link to="#connect">
+                    <Link to="#contact">
                         <button className="btn solid">
                             Contact Us
                             <BsArrowRight className="hidden" />

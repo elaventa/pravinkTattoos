@@ -15,6 +15,7 @@ import Footer from "../components/Footer";
 import ogImg from "../images/ogImage.png";
 import { useState } from "react";
 import LogoDark from "../components/LogoDark";
+import ReachUs from "../components/ReachUs/ReachUs";
 
 const IndexPage = () => {
     const [loader, setloader] = useState(true);
@@ -58,6 +59,7 @@ const IndexPage = () => {
             <Connect />
             <About />
             <Reviews />
+            <ReachUs />
             <Footer />
         </>
     );
