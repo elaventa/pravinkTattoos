@@ -16,6 +16,7 @@ import ogImg from "../images/ogImage.png";
 import { useState } from "react";
 import LogoDark from "../components/LogoDark";
 import ReachUs from "../components/ReachUs/ReachUs";
+import Piercing from "../components/Piercing/Piercing";
 
 const IndexPage = () => {
     const [loader, setloader] = useState(true);
@@ -59,6 +60,7 @@ const IndexPage = () => {
             <Connect />
             <About />
             <Reviews />
+            <Piercing />
             <ReachUs />
             <Footer />
         </>
