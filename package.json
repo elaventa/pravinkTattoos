@@ -17,6 +17,7 @@
   "dependencies": {
     "@formspree/react": "^2.4.1",
     "gatsby": "^5.3.3",
+    "gatsby-adapter-netlify": "^1.0.2",
     "gatsby-plugin-image": "^3.3.2",
     "gatsby-plugin-manifest": "^5.3.1",
     "gatsby-plugin-react-helmet": "^6.3.0",
