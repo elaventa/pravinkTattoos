@@ -30,7 +30,7 @@ const ReachUs = () => {
                         <a
                             target="_blank"
                             rel="noreferrer"
-                            href="https://instagram.com/prav_ink_tattoos"
+                            href="https://instagram.com/pravinktattoos"
                         >
                             <BsInstagram style={{ fontSize: 25 }} />
                         </a>

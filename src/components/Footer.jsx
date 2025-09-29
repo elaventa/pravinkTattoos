@@ -53,7 +53,7 @@ const Footer = () => {
                     <a
                         target="_blank"
                         rel="noreferrer"
-                        href="https://instagram.com/prav_ink_tattoos"
+                        href="https://instagram.com/pravinktattoos"
                     >
                         <BsInstagram style={{ fontSize: 25 }} />
                     </a>
@@ -64,7 +64,7 @@ const Footer = () => {
                     >
                         <BsWhatsapp style={{ fontSize: 25 }} />
                     </a>
-                    {/* <a target="_blank" rel="noreferrer" href="https://instagram.com/prav_ink_tattoos">
+                    {/* <a target="_blank" rel="noreferrer" href="https://instagram.com/pravinktattoos">
                         <BsFacebook style={{ fontSize: 25 }} />
                     </a> */}
                 </div>
