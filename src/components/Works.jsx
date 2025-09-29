@@ -172,10 +172,10 @@ const Works = () => {
             </Swiper>
 
             <div className="findUs">
-                <a target="_blank" rel="noreferrer" href="https://www.instagram.com/prav_ink_tattoos/">
+                <a target="_blank" rel="noreferrer" href="https://www.instagram.com/pravinktattoos/">
                     <p>Find us on Instagram</p>
                 </a>
-                <a target="_blank" rel="noreferrer" href="https://www.instagram.com/prav_ink_tattoos/">
+                <a target="_blank" rel="noreferrer" href="https://www.instagram.com/pravinktattoos/">
                     <BsArrowUpRight className="icon" />
                 </a>
             </div>
