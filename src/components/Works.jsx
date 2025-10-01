@@ -3,10 +3,28 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { useSwiper } from "swiper/react";
 import { BsArrowLeft, BsArrowRight, BsArrowUpRight } from "react-icons/bs";
 import { Navigation, Pagination } from "swiper";
-import { StaticImage } from "gatsby-plugin-image";
+import { graphql, useStaticQuery } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 const Works = () => {
     const swiper = useSwiper();
+
+    // Fetch data from Sanity
+    const data = useStaticQuery(graphql`
+        query {
+            allSanityGalleryImage(sort: { fields: _createdAt, order: DESC }) {
+            nodes {
+                id
+                image {
+                    asset {
+                    gatsbyImageData(width: 400, placeholder: BLURRED)
+                    }
+                }
+                }
+            }
+        }
+    `);
+
     return (
         <div className="recentWorks">
             <div className="header">
@@ -24,6 +42,7 @@ const Works = () => {
                     />
                 </div>
             </div>
+
             <Swiper
                 spaceBetween={50}
                 slidesPerView={3}
@@ -45,137 +64,29 @@ const Works = () => {
                     },
                 }}
             >
-                <SwiperSlide>
-                    <StaticImage
-                        placeholder="blurred"
-                        layout="constrained"
-                        src="../images/works/1.png"
-                        alt="work 1"
-                    />
-                </SwiperSlide>
-
-                <SwiperSlide>
-                    <StaticImage
-                        placeholder="blurred"
-                        layout="constrained"
-                        src="../images/works/2.png"
-                        alt="work 1"
-                    />
-                </SwiperSlide>
-
-                <SwiperSlide>
-                    <StaticImage
-                        placeholder="blurred"
-                        layout="constrained"
-                        src="../images/works/3.png"
-                        alt="work 1"
-                    />
-                </SwiperSlide>
-
-                <SwiperSlide>
-                    <StaticImage
-                        placeholder="blurred"
-                        layout="constrained"
-                        src="../images/works/4.jpg"
-                        alt="work 4"
-                    />
-                </SwiperSlide>
-
-                <SwiperSlide>
-                    <StaticImage
-                        placeholder="blurred"
-                        layout="constrained"
-                        src="../images/works/5.jpg"
-                        alt="work 4"
-                    />
-                </SwiperSlide>
-
-                <SwiperSlide>
-                    <StaticImage
-                        placeholder="blurred"
-                        layout="constrained"
-                        src="../images/works/6.jpg"
-                        alt="work 4"
-                    />
-                </SwiperSlide>
-
-                <SwiperSlide>
-                    <StaticImage
-                        placeholder="blurred"
-                        layout="constrained"
-                        src="../images/works/7.jpg"
-                        alt="work 4"
-                    />
-                </SwiperSlide>
-
-                <SwiperSlide>
-                    <StaticImage
-                        placeholder="blurred"
-                        layout="constrained"
-                        src="../images/works/8.jpg"
-                        alt="work 4"
-                    />
-                </SwiperSlide>
-
-                <SwiperSlide>
-                    <StaticImage
-                        placeholder="blurred"
-                        layout="constrained"
-                        src="../images/works/9.jpg"
-                        alt="work 4"
-                    />
-                </SwiperSlide>
-
-
-                <SwiperSlide>
-                    <StaticImage
-                        placeholder="blurred"
-                        layout="constrained"
-                        src="../images/works/10.jpg"
-                        alt="work 4"
-                    />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <StaticImage
-                        placeholder="blurred"
-                        layout="constrained"
-                        src="../images/works/11.jpg"
-                        alt="work 4"
-                    />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <StaticImage
-                        placeholder="blurred"
-                        layout="constrained"
-                        src="../images/works/12.jpg"
-                        alt="work 4"
-                    />
-                </SwiperSlide>
-
-                <SwiperSlide>
-                    <StaticImage
-                        placeholder="blurred"
-                        layout="constrained"
-                        src="../images/works/13.jpg"
-                        alt="work 4"
-                    />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <StaticImage
-                        placeholder="blurred"
-                        layout="constrained"
-                        src="../images/works/14.jpg"
-                        alt="work 4"
-                    />
-                </SwiperSlide>
-               
+                {data.allSanityGalleryImage.nodes.map((img) => (
+                    <SwiperSlide key={img.title}>
+                        <GatsbyImage
+                            image={getImage(img.image.asset)}
+                            alt={img.title}
+                        />
+                    </SwiperSlide>
+                ))}
             </Swiper>
 
             <div className="findUs">
-                <a target="_blank" rel="noreferrer" href="https://instagram.com/pravinktattoos">
+                <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://instagram.com/pravinktattoos"
+                >
                     <p>Find us on Instagram</p>
                 </a>
-                <a target="_blank" rel="noreferrer" href="https://instagram.com/pravinktattoos">
+                <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://instagram.com/pravinktattoos"
+                >
                     <BsArrowUpRight className="icon" />
                 </a>
             </div>

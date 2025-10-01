@@ -18,5 +18,15 @@ module.exports = {
       "path": "./src/images/"
     },
     __key: "images"
-  }],
+  },
+{
+      resolve: "gatsby-source-sanity",
+      options: {
+        projectId: "wqxh6wum",  // replace with your Sanity project ID
+        dataset: "production",                // or your dataset
+        token: process.env.SANITY_TOKEN,     // optional, for private datasets
+        watchMode: true,
+        overlayDrafts: false,
+      },
+    }],
 };
