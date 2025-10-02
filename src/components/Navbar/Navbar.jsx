@@ -28,6 +28,12 @@ const Navbar = () => {
                         <BsArrowUpRight />
                     </li>
                 </Link>
+                <Link onClick={() => setclicked(false)} to="/portfolio">
+                    <li className="navItem">
+                        Categories
+                        <BsArrowUpRight />
+                    </li>
+                </Link>
                 <Link onClick={() => setclicked(false)} to="#contact">
                     <li className="navItem">
                         Contact us

@@ -26,7 +26,7 @@ module.exports = {
         dataset: "production",                // or your dataset
         token: process.env.SANITY_TOKEN,     // optional, for private datasets
         watchMode: true,
-        overlayDrafts: false,
+        overlayDrafts: true,
       },
     }],
 };
