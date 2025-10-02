@@ -2,6 +2,22 @@
     height: 90vh;
     position: relative;
 
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: #f9f3ec; // change to any color you want, e.g., white
+    }
+
+    .swiper-pagination-bullet {
+        background-color: #f9f3ec; // default bullet color
+        opacity: 0.7; // optional for transparency
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: #000; // active bullet color
+        opacity: 1;
+    }
+
     .bg {
         height: 90vh;
         width: 100%;

@@ -1,0 +1,98 @@
+.categoryGallery {
+  padding: 50px;
+  background-color: #f9f3ec;
+
+  .pageTitle {
+    font-family: "Kanit";
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+
+    @media(max-width: 768px) {
+      font-size: 36px;
+    }
+
+    @media(max-width: 480px) {
+      font-size: 28px;
+    }
+  }
+
+  .tabsWrapper {
+    overflow-x: auto; 
+    padding-bottom: 10px;
+    margin-bottom: 30px; /* Gap between tabs and gallery */
+
+     display: flex;
+    justify-content: center;
+
+    /* Hide scrollbar for Chrome, Safari and Edge */
+    &::-webkit-scrollbar {
+      height: 5px; /* thinner scrollbar */
+    }
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #c0c0c0;
+      border-radius: 10px;
+    }
+
+    /* Hide scrollbar for Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: #c0c0c0 transparent;
+
+    .tabs {
+      display: flex;
+      gap: 15px;
+      flex-wrap: nowrap;
+      min-width: max-content;
+
+      .tabBtn {
+        padding: 10px 25px;
+        border-radius: 30px;
+        border: 1px solid #121214;
+        background: transparent;
+        cursor: pointer;
+        font-family: "Kanit";
+        font-weight: 500;
+        transition: all 0.3s ease;
+
+        &.active,
+        &:hover {
+          background-color: #121214;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  /* Masonry Gallery */
+  .my-masonry-grid {
+    display: flex;
+    margin-left: -15px; 
+    width: auto;
+  }
+  .my-masonry-grid_column {
+    padding-left: 15px; 
+    background-clip: padding-box;
+  }
+
+  .galleryCard {
+    margin-bottom: 20px; /* More gap between images */
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+
+    .tattooImg {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}

@@ -28,7 +28,7 @@ const Navbar = () => {
                         <BsArrowUpRight />
                     </li>
                 </Link>
-                <Link onClick={() => setclicked(false)} to="/portfolio">
+                <Link onClick={() => setclicked(false)} to="/category">
                     <li className="navItem">
                         Categories
                         <BsArrowUpRight />

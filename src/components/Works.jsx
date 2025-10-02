@@ -2,7 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useSwiper } from "swiper/react";
 import { BsArrowLeft, BsArrowRight, BsArrowUpRight } from "react-icons/bs";
-import { Navigation, Pagination } from "swiper";
+import { Navigation, Pagination, Autoplay } from "swiper";
 import { graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
@@ -49,7 +49,9 @@ const Works = () => {
                 onSlideChange={() => console.log("slide change")}
                 onSwiper={(swiper) => console.log(swiper)}
                 className="swiper"
-                modules={[Navigation, Pagination]}
+                modules={[Navigation, Pagination, Autoplay]}
+                loop={true}
+                
                 navigation={{
                     nextEl: "#swiper-forward",
                     prevEl: "#swiper-back",
