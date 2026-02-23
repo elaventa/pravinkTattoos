@@ -40,6 +40,19 @@ const Navbar = () => {
                         <BsArrowUpRight />
                     </li>
                 </Link>
+                <a href="https://wa.me/919921209571">
+                    <li className="navItem callBtn">
+                        <StaticImage
+                            placeholder="blurred"
+                            layout="constrained"
+                            src="../../images/whatsapp-icon.png"
+                            alt="WhatsApp"
+                            width={32}
+                            className="whatsappIcon"
+                        />
+                        
+                    </li>
+                </a>
                 <a href="tel:+919921209571">
                     <li className="navItem callBtn">
                         <BsTelephone />
@@ -49,6 +62,19 @@ const Navbar = () => {
             </ul>
 
             <div className="mobileNav">
+                <a href="https://wa.me/919921209571">
+                    <li className="navItem callBtn">
+                        <StaticImage
+                            placeholder="blurred"
+                            layout="constrained"
+                            src="../../images/whatsapp-icon.png"
+                            alt="WhatsApp"
+                            width={28}
+                            className="icon whatsappIcon"
+                        />
+                        
+                    </li>
+                </a>
                 <a style={{color: "#000"}} href="tel:+919921209571">
                     <div className="call">
                         <BsTelephone className="icon" />

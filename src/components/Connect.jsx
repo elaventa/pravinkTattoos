@@ -1,10 +1,6 @@
 import React from "react";
 import {
     BsArrowRight,
-    BsFacebook,
-    BsInstagram,
-    BsTwitter,
-    BsWhatsapp,
 } from "react-icons/bs";
 import { StaticImage } from "gatsby-plugin-image";
 
@@ -70,14 +66,26 @@ const Connect = () => {
                             rel="noreferrer"
                             href="https://instagram.com/pravinktattoos"
                         >
-                            <BsInstagram style={{ fontSize: 25 }} />
+                            <StaticImage
+                                placeholder="blurred"
+                                layout="constrained"
+                                src="../images/instagram-icon.png"
+                                alt="Instagram"
+                                width={25}
+                            />
                         </a>
                         <a
                             target="_blank"
                             rel="noreferrer"
                             href="https://wa.me/+919921209571"
                         >
-                            <BsWhatsapp style={{ fontSize: 25 }} />
+                            <StaticImage
+                                placeholder="blurred"
+                                layout="constrained"
+                                src="../images/whatsapp-icon.png"
+                                alt="WhatsApp"
+                                width={25}
+                            />
                         </a>
                         {/* 
                         <a

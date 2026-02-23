@@ -17,6 +17,8 @@ import { useState } from "react";
 import LogoDark from "../components/LogoDark";
 import ReachUs from "../components/ReachUs/ReachUs";
 import Piercing from "../components/Piercing/Piercing";
+import FloatingSocial from "../components/FloatingSocial/FloatingSocial";
+
 
 const IndexPage = () => {
     const [loader, setloader] = useState(true);
@@ -63,6 +65,7 @@ const IndexPage = () => {
             <Piercing />
             <ReachUs />
             <Footer />
+            <FloatingSocial />
         </>
     );
 };

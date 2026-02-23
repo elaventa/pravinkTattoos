@@ -102,6 +102,9 @@ h5 {
     .logoTitleWrapper{
         display: flex;
         flex-direction: column;
+        @media(max-width: 1000px){
+            display: none;
+        }
         .logoTitle{
             line-height: 1.5rem;
             letter-spacing: 0.2em;
@@ -172,3 +175,4 @@ h5 {
 @import "./components/aboutTeam";
 @import "./components/team";
 @import "./components/categoryShowcase";
+@import "./components/floatingSocial";

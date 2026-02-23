@@ -1,6 +1,6 @@
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
-import { BsArrowRight, BsInstagram, BsWhatsapp } from "react-icons/bs";
+import { BsArrowRight } from "react-icons/bs";
 
 import { IoCallOutline, IoMailOutline } from "react-icons/io5";
 import LogoLight from "./LogoLight";
@@ -55,14 +55,26 @@ const Footer = () => {
                         rel="noreferrer"
                         href="https://instagram.com/pravinktattoos"
                     >
-                        <BsInstagram style={{ fontSize: 25 }} />
+                        <StaticImage
+                            placeholder="blurred"
+                            layout="constrained"
+                            src="../images/instagram-icon.png"
+                            alt="Instagram"
+                            width={25}
+                        />
                     </a>
                     <a
                         target="_blank"
                         rel="noreferrer"
                         href="https://wa.me/+919921209571"
                     >
-                        <BsWhatsapp style={{ fontSize: 25 }} />
+                        <StaticImage
+                            placeholder="blurred"
+                            layout="constrained"
+                            src="../images/whatsapp-icon.png"
+                            alt="WhatsApp"
+                            width={25}
+                        />
                     </a>
                     {/* <a target="_blank" rel="noreferrer" href="https://instagram.com/pravinktattoos">
                         <BsFacebook style={{ fontSize: 25 }} />

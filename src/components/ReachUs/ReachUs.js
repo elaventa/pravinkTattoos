@@ -2,7 +2,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import "./ReachUs.scss";
 import { useForm, ValidationError } from "@formspree/react";
-import { BsArrowRight, BsInstagram, BsWhatsapp } from "react-icons/bs";
+import { BsArrowRight } from "react-icons/bs";
 
 const ReachUs = () => {
     const [state, handleSubmit] = useForm("mnqyplkq");
@@ -32,14 +32,26 @@ const ReachUs = () => {
                             rel="noreferrer"
                             href="https://instagram.com/pravinktattoos"
                         >
-                            <BsInstagram style={{ fontSize: 25 }} />
+                            <StaticImage
+                                placeholder="blurred"
+                                layout="constrained"
+                                src="../../images/instagram-icon.png"
+                                alt="Instagram"
+                                width={25}
+                            />
                         </a>
                         <a
                             target="_blank"
                             rel="noreferrer"
                             href="https://wa.me/+919921209571"
                         >
-                            <BsWhatsapp style={{ fontSize: 25 }} />
+                            <StaticImage
+                                placeholder="blurred"
+                                layout="constrained"
+                                src="../../images/whatsapp-icon.png"
+                                alt="WhatsApp"
+                                width={25}
+                            />
                         </a>
                     </div>
                 </div>
