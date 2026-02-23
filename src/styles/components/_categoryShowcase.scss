@@ -1,34 +1,54 @@
 .categoryGallery {
-  padding: 50px;
+  padding: 80px 50px;
   background-color: #f9f3ec;
+  @media(max-width: 1000px) {
+    padding: 60px 30px;
+  }
+  @media(max-width: 600px) {
+    padding: 40px 20px;
+  }
 
   .pageTitle {
     font-family: "Kanit";
     font-size: 48px;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 40px;
-
+    margin-bottom: 50px;
+    color: #121214;
+    letter-spacing: -1px;
     @media(max-width: 768px) {
       font-size: 36px;
+      margin-bottom: 40px;
     }
-
     @media(max-width: 480px) {
       font-size: 28px;
+      margin-bottom: 30px;
     }
   }
 
   .tabsWrapper {
     overflow-x: auto; 
-    padding-bottom: 10px;
-    margin-bottom: 30px; /* Gap between tabs and gallery */
-
-     display: flex;
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+    display: flex;
     justify-content: center;
+    @media(max-width: 768px) {
+      margin-bottom: 40px;
+      padding-bottom: 10px;
+    }
+    @media(max-width: 600px) {
+      margin-bottom: 35px;
+      padding-bottom: 8px;
+      padding: 10px 0;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      display: block;
+      justify-content: unset;
+    }
 
     /* Hide scrollbar for Chrome, Safari and Edge */
     &::-webkit-scrollbar {
-      height: 5px; /* thinner scrollbar */
+      height: 6px;
     }
     &::-webkit-scrollbar-track {
       background: transparent;
@@ -36,6 +56,9 @@
     &::-webkit-scrollbar-thumb {
       background: #c0c0c0;
       border-radius: 10px;
+      &:hover {
+        background: #999;
+      }
     }
 
     /* Hide scrollbar for Firefox */
@@ -44,24 +67,80 @@
 
     .tabs {
       display: flex;
-      gap: 15px;
+      gap: 12px;
       flex-wrap: nowrap;
       min-width: max-content;
+      width: 100%;
+      @media(max-width: 768px) {
+        gap: 10px;
+      }
+      @media(max-width: 600px) {
+        gap: 8px;
+        padding: 0 15px;
+        width: fit-content;
+        overflow: visible;
+        -webkit-overflow-scrolling: initial;
+      }
 
       .tabBtn {
-        padding: 10px 25px;
+        padding: 12px 28px;
         border-radius: 30px;
-        border: 1px solid #121214;
+        border: 2px solid #121214;
         background: transparent;
         cursor: pointer;
         font-family: "Kanit";
-        font-weight: 500;
-        transition: all 0.3s ease;
+        font-weight: 600;
+        color: #121214;
+        font-size: 16px;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        white-space: nowrap;
+        position: relative;
+        @media(max-width: 1000px) {
+          padding: 11px 24px;
+          font-size: 15px;
+        }
+        @media(max-width: 768px) {
+          padding: 10px 22px;
+          font-size: 14px;
+        }
+        @media(max-width: 600px) {
+          padding: 9px 18px;
+          font-size: 13px;
+          border-width: 1.5px;
+        }
 
-        &.active,
+        &::before {
+          content: '';
+          position: absolute;
+          inset: 0;
+          border-radius: 30px;
+          background: linear-gradient(135deg, #888781, #121214);
+          opacity: 0;
+          transition: opacity 0.3s ease;
+          z-index: -1;
+        }
+
         &:hover {
+          border-color: #121214;
+          transform: translateY(-2px);
+          @media(max-width: 600px) {
+            transform: translateY(-1px);
+          }
+        }
+
+        &.active {
           background-color: #121214;
           color: #fff;
+          box-shadow: 0 4px 15px rgba(18, 18, 20, 0.3);
+          transform: translateY(-2px);
+          @media(max-width: 600px) {
+            transform: translateY(-1px);
+            box-shadow: 0 2px 10px rgba(18, 18, 20, 0.2);
+          }
+
+          &::before {
+            opacity: 0.1;
+          }
         }
       }
     }
@@ -72,27 +151,66 @@
     display: flex;
     margin-left: -15px; 
     width: auto;
+    @media(max-width: 600px) {
+      margin-left: -10px;
+    }
   }
+  
   .my-masonry-grid_column {
     padding-left: 15px; 
     background-clip: padding-box;
+    @media(max-width: 600px) {
+      padding-left: 10px;
+    }
   }
 
   .galleryCard {
-    margin-bottom: 20px; /* More gap between images */
-    border-radius: 10px;
+    margin-bottom: 25px;
+    border-radius: 12px;
     overflow: hidden;
     cursor: pointer;
+    position: relative;
+    @media(max-width: 600px) {
+      margin-bottom: 15px;
+      border-radius: 8px;
+    }
 
     .tattooImg {
       width: 100%;
       height: auto;
       display: block;
-      transition: transform 0.3s ease;
+      transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), filter 0.4s ease;
+    }
 
-      &:hover {
-        transform: scale(1.05);
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(18, 18, 20, 0.3) 0%, rgba(136, 135, 129, 0.1) 100%);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      z-index: 2;
+      pointer-events: none;
+      border-radius: 12px;
+    }
+
+    &:hover {
+      .tattooImg {
+        transform: scale(1.08);
+        filter: brightness(1.1);
       }
+
+      &::before {
+        opacity: 1;
+      }
+    }
+
+    /* Box shadow for depth */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.4s ease;
+
+    &:hover {
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
     }
   }
 }
