@@ -21,6 +21,11 @@
                 font-size: 35px;
                 line-height: 3rem;
             }
+            @media(max-width: 600px){
+                font-size: 24px;
+                line-height: 1.8rem;
+                margin-bottom: 20px;
+            }
         }
 
         .content{
