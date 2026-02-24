@@ -95,11 +95,12 @@
     }
     .mobileNav {
         display: flex;
-        gap: 50px;
+        gap: 18px;
         align-items: center;
         display: none;
         @media (max-width: 1000px) {
             display: flex;
+            gap: 12px;
         }
         .call {
             width: 40px;

@@ -99,11 +99,13 @@ h5 {
     @media(max-width: 400px){
         gap: 5px;
     }
+    flex-shrink: 0;
     .logoTitleWrapper{
         display: flex;
         flex-direction: column;
-        @media(max-width: 1000px){
-            display: none;
+        /* Keep title visible on small screens; scale font down instead */
+        @media(max-width: 400px){
+            display: flex;
         }
         .logoTitle{
             line-height: 1.5rem;
@@ -115,8 +117,12 @@ h5 {
                 font-size: 20.2826px;
             }
 
+            @media(max-width: 600px){
+                font-size: 18px;
+            }
+
             @media(max-width: 400px){
-                font-size: 18.2826px;
+                font-size: 14px;
             }
         }
 
